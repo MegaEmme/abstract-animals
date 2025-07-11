@@ -2,6 +2,8 @@ import org.lessons.java.Aquila;
 import org.lessons.java.Cane;
 import org.lessons.java.Delfino;
 import org.lessons.java.Passerotto;
+import org.lessons.java.interfaces.INuotante;
+import org.lessons.java.interfaces.IVolante;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -45,5 +47,22 @@ public class Main {
 
         System.out.println("\n<><><><><><><><><>");
 
+        // INuotante delfinoDue = new Delfino();
+        // delfinoDue.nuota();
+        // farlo usando i metodi -->
+        delfino.nuota();
+        passerotto.vola();
+        aquila.vola();
+
+        System.out.println("\n<><><><><><><><><>\n");
+
+    }
+
+    static void faiNuotare(INuotante animaleNuotante) {
+        animaleNuotante.nuota();
+    }
+
+    static void faiVolare(IVolante animaleVolante) {
+        animaleVolante.vola();
     }
 }
