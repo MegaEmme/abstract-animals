@@ -1,6 +1,8 @@
 package org.lessons.java;
 
-public class Cane extends AbstractAnimale {
+import org.lessons.java.interfaces.INuotante;
+
+public class Cane extends AbstractAnimale implements INuotante {
     @Override
     public void verso() {
         System.out.println("Bau bau");
@@ -10,5 +12,10 @@ public class Cane extends AbstractAnimale {
     public void mangia() {
         System.out.println("Croccantini");
 
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("\nCane dice: Io al massimo posso entrare in piscina o a riva\n");
     }
 }

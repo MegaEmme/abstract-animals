@@ -17,6 +17,7 @@ public class Main {
         aquila.mangia();
         System.out.println("Il suo verso è: ");
         aquila.verso();
+        aquila.vola();
 
         Cane cane = new Cane();
         System.out.println("\nAnimale: Cane");
@@ -26,6 +27,7 @@ public class Main {
         cane.mangia();
         System.out.println("Il suo verso è: ");
         cane.verso();
+        cane.nuota();
 
         Passerotto passerotto = new Passerotto();
         System.out.println("\nAnimale: Passerotto");
@@ -35,6 +37,7 @@ public class Main {
         passerotto.mangia();
         System.out.println("Il suo verso è: ");
         passerotto.verso();
+        passerotto.vola();
 
         Delfino delfino = new Delfino();
         System.out.println("\nAnimale: Delfino");
@@ -44,16 +47,12 @@ public class Main {
         delfino.mangia();
         System.out.println("Il suo verso è: ");
         delfino.verso();
-
+        delfino.nuota();
         System.out.println("\n<><><><><><><><><>");
 
         // INuotante delfinoDue = new Delfino();
         // delfinoDue.nuota();
         // farlo usando i metodi -->
-        delfino.nuota();
-        passerotto.vola();
-        aquila.vola();
-
         System.out.println("\n<><><><><><><><><>\n");
 
     }
